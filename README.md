@@ -12,6 +12,16 @@ Each card shows:
 
 A ground delay or ground stop holds flights headed **to** that airport. It does not change the taxi-out for flights leaving it. Departure delays posted by the FAA are the ones that apply to flights leaving the field.
 
+## Status
+
+Paused at **0.2.0** on 15 Nov 2026 so the build can resume later. `main` on GitHub is the saved copy.
+
+This version has the dark dispatch board, live FAA programs, METAR flight category, August 2026 taxi-out and gate-delay medians, wheels-off in local time and UTC, header clocks for this computer's local time and UTC, and taxi fuel in pounds at 26.5 lb per minute. A general-aviation-only closure is not shown as an airline closure.
+
+**Use local now** fills the gate-time box with this computer's current local time. Each airport still estimates from its own local time unless a gate time is typed into the box. A typed gate time is applied as local time at every airport.
+
+Run it again with `npm start` and open http://localhost:4173. There is no public website yet.
+
 ## Run
 
 ```bash
