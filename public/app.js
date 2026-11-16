@@ -14,18 +14,18 @@ function signed(minutes) {
 function flags(airport) {
   const items = [];
   for (const delay of airport.status.departureDelays) {
-    items.push(`Departure delay ${delay.min}–${delay.max}`);
+    items.push({ tone: "alert", text: `Departure delay ${delay.min}–${delay.max}` });
   }
   for (const delay of airport.status.groundDelays) {
-    items.push(`Inbound ground delay avg ${delay.avg}`);
+    items.push({ tone: "inbound", text: `Inbound ground delay avg ${delay.avg}` });
   }
   for (const stop of airport.status.groundStops) {
-    items.push(`Ground stop${stop.endTime ? ` until ${stop.endTime}` : ""}`);
+    items.push({ tone: "alert", text: `Ground stop${stop.endTime ? ` until ${stop.endTime}` : ""}` });
   }
   for (const delay of airport.status.arrivalDelays) {
-    items.push(`Arrival delay ${delay.min}–${delay.max}`);
+    items.push({ tone: "caution", text: `Arrival delay ${delay.min}–${delay.max}` });
   }
-  if (airport.status.closures.length) items.push("Closure posted");
+  if (airport.status.closures.length) items.push({ tone: "alert", text: "Closure posted" });
   return items;
 }
 
@@ -49,9 +49,10 @@ function render(payload) {
       item.textContent = "No FAA program";
       list.append(item);
     } else {
-      for (const text of posted) {
+      for (const flag of posted) {
         const item = document.createElement("li");
-        item.textContent = text;
+        item.className = flag.tone;
+        item.textContent = flag.text;
         list.append(item);
       }
     }
@@ -70,6 +71,10 @@ function render(payload) {
       const dd = document.createElement("dd");
       dt.textContent = label;
       dd.textContent = value;
+      if (label === "Wheels-off") wrap.classList.add("hero");
+      if (label === "Gate delay") {
+        wrap.classList.add(estimate.gateDelay > 0 ? "late" : estimate.gateDelay < 0 ? "early" : "ontime");
+      }
       wrap.append(dt, dd);
       dl.append(wrap);
     }
