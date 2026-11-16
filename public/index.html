@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US Airport Ops</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div>
+        <p class="eyebrow">Dispatch board</p>
+        <h1>US Airport Ops</h1>
+      </div>
+      <form id="when" class="when">
+        <label for="scheduled">Scheduled gate time</label>
+        <input id="scheduled" name="scheduled" type="time" value="" />
+        <button type="button" id="use-now">Use local now</button>
+      </form>
+    </header>
+    <p id="status-line" class="status-line">Loading live FAA status and weather.</p>
+    <main id="board" class="board"></main>
+    <template id="card">
+      <article class="card">
+        <header>
+          <div>
+            <p class="code"></p>
+            <h2 class="place"></h2>
+          </div>
+          <p class="cat"></p>
+        </header>
+        <p class="local"></p>
+        <ul class="flags"></ul>
+        <dl class="figures"></dl>
+        <p class="math"></p>
+        <p class="weather"></p>
+      </article>
+    </template>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

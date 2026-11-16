@@ -1,0 +1,1492 @@
+{
+  "source": "Bureau of Transportation Statistics, Reporting Carrier On-Time Performance",
+  "sourceUrl": "https://transtats.bts.gov/TableInfo.asp?gnoyr_VQ=FGJ&QO_fu146_anzr=b0-gvzr",
+  "period": "2026-08",
+  "periodLabel": "August 2026",
+  "file": "bts-2026-08.zip",
+  "departuresUsed": 168185,
+  "note": "Medians of reporting-carrier domestic departures. Hours with fewer than 30 flights use the airport median for that month.",
+  "fuel": {
+    "aircraft": "Typical narrowbody (737 / A320 class)",
+    "kgPerMinute": 12,
+    "kgPerGallon": 3.04,
+    "note": "Planning figure for both engines at taxi thrust. This is not a measured fuel flow."
+  },
+  "airports": {
+    "ATL": {
+      "icao": "KATL",
+      "name": "Hartsfield-Jackson Atlanta",
+      "city": "Atlanta",
+      "tz": "America/New_York",
+      "iata": "ATL",
+      "overall": {
+        "flights": 26897,
+        "taxiOutMedian": 16,
+        "taxiOutP90": 29,
+        "depDelayMedian": -2
+      },
+      "hours": {
+        "0": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 115,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 21,
+          "depDelayMedian": -3
+        },
+        "6": {
+          "flights": 460,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 23,
+          "depDelayMedian": -4
+        },
+        "7": {
+          "flights": 1375,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 22,
+          "depDelayMedian": -4
+        },
+        "8": {
+          "flights": 1836,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 21,
+          "depDelayMedian": -4
+        },
+        "9": {
+          "flights": 2181,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": -4
+        },
+        "10": {
+          "flights": 1586,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 28,
+          "depDelayMedian": -3
+        },
+        "11": {
+          "flights": 2010,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 26,
+          "depDelayMedian": -3
+        },
+        "12": {
+          "flights": 1593,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 25,
+          "depDelayMedian": -2
+        },
+        "13": {
+          "flights": 1372,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 28,
+          "depDelayMedian": -3
+        },
+        "14": {
+          "flights": 1249,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 34,
+          "depDelayMedian": -1
+        },
+        "15": {
+          "flights": 2087,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 43,
+          "depDelayMedian": 0
+        },
+        "16": {
+          "flights": 1682,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 50,
+          "depDelayMedian": 2
+        },
+        "17": {
+          "flights": 1422,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 40,
+          "depDelayMedian": 2
+        },
+        "18": {
+          "flights": 1279,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 31,
+          "depDelayMedian": 6
+        },
+        "19": {
+          "flights": 1759,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 28,
+          "depDelayMedian": 3
+        },
+        "20": {
+          "flights": 1485,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": 5
+        },
+        "21": {
+          "flights": 1480,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 24,
+          "depDelayMedian": 0
+        },
+        "22": {
+          "flights": 1454,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 24,
+          "depDelayMedian": -2
+        },
+        "23": {
+          "flights": 472,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 24,
+          "depDelayMedian": -2
+        }
+      }
+    },
+    "ORD": {
+      "icao": "KORD",
+      "name": "O'Hare",
+      "city": "Chicago",
+      "tz": "America/Chicago",
+      "iata": "ORD",
+      "overall": {
+        "flights": 32422,
+        "taxiOutMedian": 27,
+        "taxiOutP90": 50,
+        "depDelayMedian": -1
+      },
+      "hours": {
+        "0": {
+          "flights": 49,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 50,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 50,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 50,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 50,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 386,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 30,
+          "depDelayMedian": -4
+        },
+        "6": {
+          "flights": 1786,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 38,
+          "depDelayMedian": -4
+        },
+        "7": {
+          "flights": 1789,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 45,
+          "depDelayMedian": -4
+        },
+        "8": {
+          "flights": 2807,
+          "taxiOutMedian": 24,
+          "taxiOutP90": 44,
+          "depDelayMedian": -3
+        },
+        "9": {
+          "flights": 1856,
+          "taxiOutMedian": 28,
+          "taxiOutP90": 52,
+          "depDelayMedian": -3
+        },
+        "10": {
+          "flights": 2485,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 55,
+          "depDelayMedian": -2
+        },
+        "11": {
+          "flights": 1811,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 50,
+          "depDelayMedian": -2
+        },
+        "12": {
+          "flights": 1591,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 48,
+          "depDelayMedian": -1
+        },
+        "13": {
+          "flights": 1933,
+          "taxiOutMedian": 26,
+          "taxiOutP90": 48,
+          "depDelayMedian": 0
+        },
+        "14": {
+          "flights": 1888,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 57,
+          "depDelayMedian": 2
+        },
+        "15": {
+          "flights": 1970,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 51,
+          "depDelayMedian": 5
+        },
+        "16": {
+          "flights": 1840,
+          "taxiOutMedian": 32,
+          "taxiOutP90": 55,
+          "depDelayMedian": 3
+        },
+        "17": {
+          "flights": 2070,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 51,
+          "depDelayMedian": 7
+        },
+        "18": {
+          "flights": 1787,
+          "taxiOutMedian": 32,
+          "taxiOutP90": 55,
+          "depDelayMedian": 7
+        },
+        "19": {
+          "flights": 1981,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 50,
+          "depDelayMedian": 13
+        },
+        "20": {
+          "flights": 1330,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 48,
+          "depDelayMedian": 12
+        },
+        "21": {
+          "flights": 1985,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 50,
+          "depDelayMedian": 9
+        },
+        "22": {
+          "flights": 730,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 44,
+          "depDelayMedian": 6
+        },
+        "23": {
+          "flights": 348,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 36,
+          "depDelayMedian": 4
+        }
+      }
+    },
+    "DFW": {
+      "icao": "KDFW",
+      "name": "Dallas/Fort Worth",
+      "city": "Dallas-Fort Worth",
+      "tz": "America/Chicago",
+      "iata": "DFW",
+      "overall": {
+        "flights": 27198,
+        "taxiOutMedian": 16,
+        "taxiOutP90": 26,
+        "depDelayMedian": -1
+      },
+      "hours": {
+        "0": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 320,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 20,
+          "depDelayMedian": -6
+        },
+        "6": {
+          "flights": 312,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 22,
+          "depDelayMedian": -5
+        },
+        "7": {
+          "flights": 2097,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 26,
+          "depDelayMedian": -5
+        },
+        "8": {
+          "flights": 2174,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 27,
+          "depDelayMedian": -5
+        },
+        "9": {
+          "flights": 1985,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 26,
+          "depDelayMedian": -3
+        },
+        "10": {
+          "flights": 1698,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": -1
+        },
+        "11": {
+          "flights": 1341,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": -2
+        },
+        "12": {
+          "flights": 1875,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": -2
+        },
+        "13": {
+          "flights": 1505,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 25,
+          "depDelayMedian": -1
+        },
+        "14": {
+          "flights": 1779,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 26,
+          "depDelayMedian": 2
+        },
+        "15": {
+          "flights": 1435,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 27,
+          "depDelayMedian": 0
+        },
+        "16": {
+          "flights": 1716,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 27,
+          "depDelayMedian": 1
+        },
+        "17": {
+          "flights": 1582,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": 3
+        },
+        "18": {
+          "flights": 1880,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": 6
+        },
+        "19": {
+          "flights": 1401,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": 9
+        },
+        "20": {
+          "flights": 1610,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 26,
+          "depDelayMedian": 7
+        },
+        "21": {
+          "flights": 1921,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 27,
+          "depDelayMedian": 2
+        },
+        "22": {
+          "flights": 551,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 24,
+          "depDelayMedian": 6
+        },
+        "23": {
+          "flights": 16,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        }
+      }
+    },
+    "DEN": {
+      "icao": "KDEN",
+      "name": "Denver",
+      "city": "Denver",
+      "tz": "America/Denver",
+      "iata": "DEN",
+      "overall": {
+        "flights": 28194,
+        "taxiOutMedian": 18,
+        "taxiOutP90": 32,
+        "depDelayMedian": 2
+      },
+      "hours": {
+        "0": {
+          "flights": 36,
+          "taxiOutMedian": 12,
+          "taxiOutP90": 15,
+          "depDelayMedian": -6
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": 2,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": 2,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": 2,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": 2,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 267,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 18,
+          "depDelayMedian": -4
+        },
+        "6": {
+          "flights": 829,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 22,
+          "depDelayMedian": -5
+        },
+        "7": {
+          "flights": 1398,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": -4
+        },
+        "8": {
+          "flights": 1448,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 25,
+          "depDelayMedian": -4
+        },
+        "9": {
+          "flights": 2544,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2
+        },
+        "10": {
+          "flights": 1457,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 29,
+          "depDelayMedian": -1
+        },
+        "11": {
+          "flights": 3133,
+          "taxiOutMedian": 19,
+          "taxiOutP90": 31,
+          "depDelayMedian": 0
+        },
+        "12": {
+          "flights": 1170,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 25,
+          "depDelayMedian": 2
+        },
+        "13": {
+          "flights": 2361,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 33,
+          "depDelayMedian": -1
+        },
+        "14": {
+          "flights": 1148,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 30,
+          "depDelayMedian": 6
+        },
+        "15": {
+          "flights": 1812,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 41,
+          "depDelayMedian": 5
+        },
+        "16": {
+          "flights": 1411,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 46,
+          "depDelayMedian": 6
+        },
+        "17": {
+          "flights": 2557,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 44,
+          "depDelayMedian": 16
+        },
+        "18": {
+          "flights": 1140,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 33,
+          "depDelayMedian": 36
+        },
+        "19": {
+          "flights": 2384,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 33,
+          "depDelayMedian": 24
+        },
+        "20": {
+          "flights": 1728,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 27,
+          "depDelayMedian": 22
+        },
+        "21": {
+          "flights": 732,
+          "taxiOutMedian": 19,
+          "taxiOutP90": 28,
+          "depDelayMedian": 15
+        },
+        "22": {
+          "flights": 251,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 21,
+          "depDelayMedian": 13
+        },
+        "23": {
+          "flights": 388,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 23,
+          "depDelayMedian": 6
+        }
+      }
+    },
+    "LAX": {
+      "icao": "KLAX",
+      "name": "Los Angeles",
+      "city": "Los Angeles",
+      "tz": "America/Los_Angeles",
+      "iata": "LAX",
+      "overall": {
+        "flights": 16360,
+        "taxiOutMedian": 17,
+        "taxiOutP90": 29,
+        "depDelayMedian": -2
+      },
+      "hours": {
+        "0": {
+          "flights": 156,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 23,
+          "depDelayMedian": 0
+        },
+        "1": {
+          "flights": 4,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 226,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 20,
+          "depDelayMedian": -3
+        },
+        "6": {
+          "flights": 822,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 23,
+          "depDelayMedian": -4
+        },
+        "7": {
+          "flights": 1064,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -5
+        },
+        "8": {
+          "flights": 1415,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 29,
+          "depDelayMedian": -4
+        },
+        "9": {
+          "flights": 1579,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 33,
+          "depDelayMedian": -3
+        },
+        "10": {
+          "flights": 1293,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": -2
+        },
+        "11": {
+          "flights": 771,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 31,
+          "depDelayMedian": 0
+        },
+        "12": {
+          "flights": 861,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -1
+        },
+        "13": {
+          "flights": 929,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 30,
+          "depDelayMedian": -2
+        },
+        "14": {
+          "flights": 723,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 34,
+          "depDelayMedian": -2
+        },
+        "15": {
+          "flights": 625,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 27,
+          "depDelayMedian": 0
+        },
+        "16": {
+          "flights": 923,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 30,
+          "depDelayMedian": -1
+        },
+        "17": {
+          "flights": 750,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 29,
+          "depDelayMedian": -1
+        },
+        "18": {
+          "flights": 1083,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2
+        },
+        "19": {
+          "flights": 653,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 29,
+          "depDelayMedian": -3
+        },
+        "20": {
+          "flights": 637,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 27,
+          "depDelayMedian": -2
+        },
+        "21": {
+          "flights": 576,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 27,
+          "depDelayMedian": -2
+        },
+        "22": {
+          "flights": 686,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": 2
+        },
+        "23": {
+          "flights": 584,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 25,
+          "depDelayMedian": 2
+        }
+      }
+    },
+    "EWR": {
+      "icao": "KEWR",
+      "name": "Newark Liberty",
+      "city": "Newark",
+      "tz": "America/New_York",
+      "iata": "EWR",
+      "overall": {
+        "flights": 9485,
+        "taxiOutMedian": 22,
+        "taxiOutP90": 49,
+        "depDelayMedian": -3
+      },
+      "hours": {
+        "0": {
+          "flights": 0,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3,
+          "fallback": "airport"
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 116,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 24,
+          "depDelayMedian": -4
+        },
+        "6": {
+          "flights": 694,
+          "taxiOutMedian": 19,
+          "taxiOutP90": 31,
+          "depDelayMedian": -5
+        },
+        "7": {
+          "flights": 895,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 34,
+          "depDelayMedian": -5
+        },
+        "8": {
+          "flights": 610,
+          "taxiOutMedian": 23,
+          "taxiOutP90": 41,
+          "depDelayMedian": -4
+        },
+        "9": {
+          "flights": 651,
+          "taxiOutMedian": 24,
+          "taxiOutP90": 41,
+          "depDelayMedian": -4
+        },
+        "10": {
+          "flights": 615,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 42,
+          "depDelayMedian": -4
+        },
+        "11": {
+          "flights": 552,
+          "taxiOutMedian": 19,
+          "taxiOutP90": 41,
+          "depDelayMedian": -3
+        },
+        "12": {
+          "flights": 285,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 38,
+          "depDelayMedian": -2
+        },
+        "13": {
+          "flights": 644,
+          "taxiOutMedian": 19,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3
+        },
+        "14": {
+          "flights": 540,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 64,
+          "depDelayMedian": -1
+        },
+        "15": {
+          "flights": 573,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 69,
+          "depDelayMedian": -1
+        },
+        "16": {
+          "flights": 634,
+          "taxiOutMedian": 24,
+          "taxiOutP90": 71,
+          "depDelayMedian": -2
+        },
+        "17": {
+          "flights": 463,
+          "taxiOutMedian": 28,
+          "taxiOutP90": 77,
+          "depDelayMedian": 0
+        },
+        "18": {
+          "flights": 617,
+          "taxiOutMedian": 26,
+          "taxiOutP90": 62,
+          "depDelayMedian": 0
+        },
+        "19": {
+          "flights": 451,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 62,
+          "depDelayMedian": 1
+        },
+        "20": {
+          "flights": 627,
+          "taxiOutMedian": 26,
+          "taxiOutP90": 54,
+          "depDelayMedian": 6
+        },
+        "21": {
+          "flights": 482,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 47,
+          "depDelayMedian": 1
+        },
+        "22": {
+          "flights": 36,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": 60
+        },
+        "23": {
+          "flights": 0,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 49,
+          "depDelayMedian": -3,
+          "fallback": "airport"
+        }
+      }
+    },
+    "SFO": {
+      "icao": "KSFO",
+      "name": "San Francisco",
+      "city": "San Francisco",
+      "tz": "America/Los_Angeles",
+      "iata": "SFO",
+      "overall": {
+        "flights": 13461,
+        "taxiOutMedian": 25,
+        "taxiOutP90": 44,
+        "depDelayMedian": 1
+      },
+      "hours": {
+        "0": {
+          "flights": 116,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 25,
+          "depDelayMedian": -1
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 44,
+          "depDelayMedian": 1,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 44,
+          "depDelayMedian": 1,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 44,
+          "depDelayMedian": 1,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 25,
+          "taxiOutP90": 44,
+          "depDelayMedian": 1,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 272,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 22,
+          "depDelayMedian": -5
+        },
+        "6": {
+          "flights": 586,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 26,
+          "depDelayMedian": -5
+        },
+        "7": {
+          "flights": 669,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 31,
+          "depDelayMedian": -5
+        },
+        "8": {
+          "flights": 1271,
+          "taxiOutMedian": 28,
+          "taxiOutP90": 44,
+          "depDelayMedian": -4
+        },
+        "9": {
+          "flights": 586,
+          "taxiOutMedian": 24,
+          "taxiOutP90": 39,
+          "depDelayMedian": -2
+        },
+        "10": {
+          "flights": 1466,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 47,
+          "depDelayMedian": 2
+        },
+        "11": {
+          "flights": 496,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 45,
+          "depDelayMedian": 16
+        },
+        "12": {
+          "flights": 1073,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 52,
+          "depDelayMedian": 8
+        },
+        "13": {
+          "flights": 716,
+          "taxiOutMedian": 29,
+          "taxiOutP90": 53,
+          "depDelayMedian": 9
+        },
+        "14": {
+          "flights": 665,
+          "taxiOutMedian": 35,
+          "taxiOutP90": 55,
+          "depDelayMedian": 7
+        },
+        "15": {
+          "flights": 464,
+          "taxiOutMedian": 27,
+          "taxiOutP90": 49,
+          "depDelayMedian": 12
+        },
+        "16": {
+          "flights": 1228,
+          "taxiOutMedian": 28,
+          "taxiOutP90": 49,
+          "depDelayMedian": 6
+        },
+        "17": {
+          "flights": 350,
+          "taxiOutMedian": 28,
+          "taxiOutP90": 48,
+          "depDelayMedian": 12
+        },
+        "18": {
+          "flights": 806,
+          "taxiOutMedian": 22,
+          "taxiOutP90": 35,
+          "depDelayMedian": 2
+        },
+        "19": {
+          "flights": 443,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 33,
+          "depDelayMedian": 3
+        },
+        "20": {
+          "flights": 469,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 32,
+          "depDelayMedian": 8
+        },
+        "21": {
+          "flights": 607,
+          "taxiOutMedian": 23,
+          "taxiOutP90": 34,
+          "depDelayMedian": 3
+        },
+        "22": {
+          "flights": 638,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 31,
+          "depDelayMedian": 5
+        },
+        "23": {
+          "flights": 540,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 31,
+          "depDelayMedian": 3
+        }
+      }
+    },
+    "MIA": {
+      "icao": "KMIA",
+      "name": "Miami",
+      "city": "Miami",
+      "tz": "America/New_York",
+      "iata": "MIA",
+      "overall": {
+        "flights": 8536,
+        "taxiOutMedian": 18,
+        "taxiOutP90": 32,
+        "depDelayMedian": -2
+      },
+      "hours": {
+        "0": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 32,
+          "depDelayMedian": -2,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 80,
+          "taxiOutMedian": 12,
+          "taxiOutP90": 18,
+          "depDelayMedian": -4
+        },
+        "6": {
+          "flights": 344,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 22,
+          "depDelayMedian": -5
+        },
+        "7": {
+          "flights": 587,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 24,
+          "depDelayMedian": -5
+        },
+        "8": {
+          "flights": 730,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 25,
+          "depDelayMedian": -5
+        },
+        "9": {
+          "flights": 458,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 25,
+          "depDelayMedian": -3
+        },
+        "10": {
+          "flights": 163,
+          "taxiOutMedian": 23,
+          "taxiOutP90": 34,
+          "depDelayMedian": -2
+        },
+        "11": {
+          "flights": 309,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 29,
+          "depDelayMedian": -2
+        },
+        "12": {
+          "flights": 417,
+          "taxiOutMedian": 19,
+          "taxiOutP90": 34,
+          "depDelayMedian": 0
+        },
+        "13": {
+          "flights": 323,
+          "taxiOutMedian": 17,
+          "taxiOutP90": 27,
+          "depDelayMedian": -2
+        },
+        "14": {
+          "flights": 445,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 29,
+          "depDelayMedian": 2
+        },
+        "15": {
+          "flights": 645,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 36,
+          "depDelayMedian": 3
+        },
+        "16": {
+          "flights": 394,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 43,
+          "depDelayMedian": 6
+        },
+        "17": {
+          "flights": 562,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 40,
+          "depDelayMedian": 2
+        },
+        "18": {
+          "flights": 485,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 39,
+          "depDelayMedian": 1
+        },
+        "19": {
+          "flights": 626,
+          "taxiOutMedian": 21,
+          "taxiOutP90": 38,
+          "depDelayMedian": 1
+        },
+        "20": {
+          "flights": 682,
+          "taxiOutMedian": 20,
+          "taxiOutP90": 35,
+          "depDelayMedian": 1
+        },
+        "21": {
+          "flights": 686,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 29,
+          "depDelayMedian": 4
+        },
+        "22": {
+          "flights": 516,
+          "taxiOutMedian": 18,
+          "taxiOutP90": 26,
+          "depDelayMedian": -2
+        },
+        "23": {
+          "flights": 84,
+          "taxiOutMedian": 16,
+          "taxiOutP90": 22,
+          "depDelayMedian": -4
+        }
+      }
+    },
+    "TPA": {
+      "icao": "KTPA",
+      "name": "Tampa",
+      "city": "Tampa",
+      "tz": "America/New_York",
+      "iata": "TPA",
+      "overall": {
+        "flights": 5632,
+        "taxiOutMedian": 14,
+        "taxiOutP90": 26,
+        "depDelayMedian": -1
+      },
+      "hours": {
+        "0": {
+          "flights": 0,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "1": {
+          "flights": 0,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "2": {
+          "flights": 0,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "3": {
+          "flights": 0,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "4": {
+          "flights": 0,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        },
+        "5": {
+          "flights": 87,
+          "taxiOutMedian": 11,
+          "taxiOutP90": 15,
+          "depDelayMedian": -4
+        },
+        "6": {
+          "flights": 436,
+          "taxiOutMedian": 12,
+          "taxiOutP90": 16,
+          "depDelayMedian": -5
+        },
+        "7": {
+          "flights": 719,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 26,
+          "depDelayMedian": -4
+        },
+        "8": {
+          "flights": 375,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -4
+        },
+        "9": {
+          "flights": 358,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 23,
+          "depDelayMedian": -3
+        },
+        "10": {
+          "flights": 335,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 23,
+          "depDelayMedian": -1
+        },
+        "11": {
+          "flights": 360,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 25,
+          "depDelayMedian": -2
+        },
+        "12": {
+          "flights": 383,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 32,
+          "depDelayMedian": -1
+        },
+        "13": {
+          "flights": 262,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 25,
+          "depDelayMedian": 2
+        },
+        "14": {
+          "flights": 257,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 30,
+          "depDelayMedian": 0
+        },
+        "15": {
+          "flights": 216,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 29,
+          "depDelayMedian": 3
+        },
+        "16": {
+          "flights": 409,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 32,
+          "depDelayMedian": 8
+        },
+        "17": {
+          "flights": 418,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 30,
+          "depDelayMedian": 11
+        },
+        "18": {
+          "flights": 273,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 25,
+          "depDelayMedian": 14
+        },
+        "19": {
+          "flights": 425,
+          "taxiOutMedian": 13,
+          "taxiOutP90": 21,
+          "depDelayMedian": 14
+        },
+        "20": {
+          "flights": 181,
+          "taxiOutMedian": 12,
+          "taxiOutP90": 18,
+          "depDelayMedian": 10
+        },
+        "21": {
+          "flights": 58,
+          "taxiOutMedian": 15,
+          "taxiOutP90": 22,
+          "depDelayMedian": -1
+        },
+        "22": {
+          "flights": 80,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 20,
+          "depDelayMedian": 44
+        },
+        "23": {
+          "flights": 0,
+          "taxiOutMedian": 14,
+          "taxiOutP90": 26,
+          "depDelayMedian": -1,
+          "fallback": "airport"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "us-airport-ops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "US airport delay, taxi-out, wheels-off, and taxi-fuel board",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "baselines": "python3 scripts/build-baselines.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
