@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { estimateDeparture, fuelFor, parseDurationMinutes } from "../lib/estimate.js";
+import { estimateDeparture, fuelFor, offsetMinutes, parseDurationMinutes, utcFromLocalClock } from "../lib/estimate.js";
 import { isOperationalClosure, parseFaaStatus } from "../lib/faa.js";
 
 test("wheels-off adds gate delay and taxi-out", () => {
@@ -30,6 +30,13 @@ test("midnight wrap carries a day", () => {
   });
   assert.equal(result.wheelsOff.clock, "01:00");
   assert.equal(result.wheelsOff.dayOffset, 1);
+});
+
+test("local evening converts to the next UTC day", () => {
+  assert.equal(offsetMinutes({ hour: 19, minute: 40 }, { hour: 0, minute: 40 }), -300);
+  const zulu = utcFromLocalClock({ hhmm: 1952, dayOffset: 0 }, -300);
+  assert.equal(zulu.clock, "00:52");
+  assert.equal(zulu.dayOffset, 1);
 });
 
 test("duration text parses hours and minutes", () => {

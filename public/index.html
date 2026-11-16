@@ -12,10 +12,21 @@
         <p class="eyebrow">NAS dispatch</p>
         <h1>US Airport Ops</h1>
       </div>
+      <div class="clocks" aria-label="Current time">
+        <p>
+          <span>Local</span>
+          <strong id="local-clock">--:--</strong>
+        </p>
+        <p class="zulu">
+          <span>UTC</span>
+          <strong id="utc-clock">--:--Z</strong>
+        </p>
+      </div>
       <form id="when" class="when">
         <label for="scheduled">Scheduled gate time</label>
         <input id="scheduled" name="scheduled" type="time" value="" />
         <button type="button" id="use-now">Use local now</button>
+        <p id="when-note" class="when-note">Each airport uses its own local time.</p>
       </form>
     </header>
     <p id="status-line" class="status-line">Loading live FAA status and weather.</p>

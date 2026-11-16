@@ -57,10 +57,37 @@ h1 {
   letter-spacing: 0.01em;
 }
 
+.clocks {
+  display: flex;
+  gap: 18px;
+  margin-left: auto;
+  font-family: "SF Mono", ui-monospace, Menlo, monospace;
+}
+
+.clocks p { margin: 0; }
+
+.clocks span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.clocks strong {
+  font-size: 22px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.clocks .zulu strong { color: var(--accent); }
+
 .when {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px 10px;
   align-items: center;
+  max-width: 420px;
   padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -93,10 +120,19 @@ button {
   border-radius: 8px;
   padding: 8px 12px;
   font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
 }
 
 button:hover { filter: brightness(1.08); }
+
+.when-note {
+  margin: 0;
+  flex-basis: 100%;
+  color: var(--muted);
+  font-family: "SF Mono", ui-monospace, Menlo, monospace;
+  font-size: 11px;
+}
 
 .status-line {
   margin: 0;
@@ -240,6 +276,7 @@ button:hover { filter: brightness(1.08); }
 }
 
 .figures .hero {
+  grid-column: 1 / -1;
   border-color: rgba(62, 198, 255, 0.45);
 }
 
@@ -271,10 +308,11 @@ button:hover { filter: brightness(1.08); }
   .status-line, .board { padding-left: 16px; padding-right: 16px; }
   .when {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
+    max-width: none;
     align-items: center;
   }
-  .when label { grid-column: 1 / -1; }
-  .when button { grid-column: 1 / -1; }
+  .clocks { margin-left: 0; }
+  .when label, .when button, .when-note { grid-column: 1 / -1; }
   .board { grid-template-columns: 1fr; }
 }

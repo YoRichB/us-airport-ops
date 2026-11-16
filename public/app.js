@@ -3,6 +3,29 @@ const template = document.querySelector("#card");
 const statusLine = document.querySelector("#status-line");
 const scheduledInput = document.querySelector("#scheduled");
 const useNow = document.querySelector("#use-now");
+const whenForm = document.querySelector("#when");
+const whenNote = document.querySelector("#when-note");
+const localClock = document.querySelector("#local-clock");
+const utcClock = document.querySelector("#utc-clock");
+let airportLocal = true;
+
+function pad(value) {
+  return String(value).padStart(2, "0");
+}
+
+function browserLocalValue(date = new Date()) {
+  return `${pad(date.getHours())}:${pad(date.getMinutes())}`;
+}
+
+function paintClocks(date = new Date()) {
+  localClock.textContent = browserLocalValue(date);
+  utcClock.textContent = `${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}Z`;
+}
+
+function clockText(clock, suffix) {
+  const day = clock.dayOffset ? `+${clock.dayOffset}d` : "";
+  return `${clock.clock}${day}${suffix}`;
+}
 
 function signed(minutes) {
   const value = Number(minutes);
@@ -39,7 +62,8 @@ function render(payload) {
     const cat = node.querySelector(".cat");
     cat.textContent = category;
     cat.classList.add(category.toLowerCase());
-    node.querySelector(".local").textContent = `${airport.local.label} · ${airport.local.clock} local · ${airport.name}`;
+    node.querySelector(".local").textContent =
+      `${airport.local.label} · ${airport.local.clock} local · ${airport.utc.clock}Z · ${airport.name}`;
 
     const list = node.querySelector(".flags");
     const posted = flags(airport);
@@ -61,7 +85,7 @@ function render(payload) {
     const figures = [
       ["Taxi-out", `${estimate.taxiOut} min`],
       ["Gate delay", signed(estimate.gateDelay)],
-      ["Wheels-off", estimate.wheelsOff.dayOffset ? `${estimate.wheelsOff.clock} +${estimate.wheelsOff.dayOffset}d` : estimate.wheelsOff.clock],
+      ["Wheels-off", `${clockText(estimate.wheelsOff, " L")} / ${clockText(estimate.wheelsOffUtc, "Z")}`],
       ["Taxi fuel", `${estimate.fuel.pounds.toLocaleString("en-US")} lb`],
     ];
     const dl = node.querySelector(".figures");
@@ -94,26 +118,41 @@ function render(payload) {
     `A ground delay holds flights headed to that airport. It does not change taxi-out for flights leaving it.`;
 }
 
+function showLoadError(error) {
+  statusLine.textContent = error.message;
+}
+
 async function load() {
   const params = new URLSearchParams();
-  if (scheduledInput.value) params.set("scheduled", scheduledInput.value);
+  if (!airportLocal && scheduledInput.value) params.set("scheduled", scheduledInput.value);
   const response = await fetch(`/api/board?${params.toString()}`);
   if (!response.ok) throw new Error(`Board ${response.status}`);
   render(await response.json());
 }
 
 scheduledInput.addEventListener("change", () => {
-  load().catch((error) => {
-    statusLine.textContent = error.message;
-  });
+  airportLocal = scheduledInput.value === "";
+  whenNote.textContent = airportLocal
+    ? "Each airport uses its own local time."
+    : "That gate time is local at every airport.";
+  load().catch(showLoadError);
+});
+
+whenForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  useNow.click();
 });
 
 useNow.addEventListener("click", () => {
-  scheduledInput.value = "";
-  load().catch((error) => {
-    statusLine.textContent = error.message;
-  });
+  airportLocal = true;
+  scheduledInput.value = browserLocalValue();
+  whenNote.textContent = "Each airport uses its own local time.";
+  paintClocks();
+  load().catch(showLoadError);
 });
+
+paintClocks();
+setInterval(paintClocks, 1000);
 
 load().catch((error) => {
   statusLine.textContent = error.message;
