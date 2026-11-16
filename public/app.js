@@ -61,7 +61,7 @@ function render(payload) {
       ["Taxi-out", `${estimate.taxiOut} min`],
       ["Gate delay", signed(estimate.gateDelay)],
       ["Wheels-off", estimate.wheelsOff.dayOffset ? `${estimate.wheelsOff.clock} +${estimate.wheelsOff.dayOffset}d` : estimate.wheelsOff.clock],
-      ["Taxi fuel", `${estimate.fuel.kg} kg`],
+      ["Taxi fuel", `${estimate.fuel.pounds.toLocaleString("en-US")} lb`],
     ];
     const dl = node.querySelector(".figures");
     for (const [label, value] of figures) {
@@ -78,7 +78,7 @@ function render(payload) {
     const gateClock = `${gate.slice(0, 2)}:${gate.slice(2)}`;
     node.querySelector(".math").textContent =
       `Gate ${gateClock} ${signed(estimate.gateDelay)} historical delay, then ${estimate.taxiOut} min taxi. ` +
-      `Typical late taxi-out is ${estimate.taxiOutP90} min. Fuel is ${estimate.taxiOut} min × ${estimate.fuel.kgPerMinute} kg for a ${payload.fuel.aircraft.toLowerCase()}, about ${estimate.fuel.gallons} gal.`;
+      `Typical late taxi-out is ${estimate.taxiOutP90} min. Fuel is ${estimate.taxiOut} min × ${estimate.fuel.lbPerMinute} lb for a ${payload.fuel.aircraft.toLowerCase()}, about ${estimate.fuel.gallons} gal.`;
     node.querySelector(".weather").textContent = airport.weather
       ? `${airport.weather.wind} · vis ${airport.weather.visibility} · ${airport.weather.raw}`
       : "Weather unavailable";

@@ -17,7 +17,8 @@ test("wheels-off adds gate delay and taxi-out", () => {
   });
   assert.equal(result.wheelsOff.clock, "19:04");
   assert.equal(result.wheelsOff.dayOffset, 0);
-  assert.equal(result.fuel.kg, 216);
+  assert.equal(result.fuel.pounds, 477);
+  assert.equal(result.fuel.lbPerMinute, 26.5);
   assert.equal(result.fuel.gallons, 71);
 });
 
@@ -34,7 +35,7 @@ test("midnight wrap carries a day", () => {
 test("duration text parses hours and minutes", () => {
   assert.equal(parseDurationMinutes("2 hours and 59 minutes"), 179);
   assert.equal(parseDurationMinutes("16 minutes"), 16);
-  assert.equal(fuelFor(15, { kgPerMinute: 12, kgPerGallon: 3.04 }).kg, 180);
+  assert.equal(fuelFor(15, { kgPerMinute: 12, kgPerGallon: 3.04 }).pounds, 398);
 });
 
 test("FAA sample separates inbound programs from departure delays", () => {

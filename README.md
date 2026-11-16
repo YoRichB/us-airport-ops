@@ -31,7 +31,7 @@ npm test
 | Taxi-out and gate delay | [BTS Reporting Carrier On-Time Performance](https://transtats.bts.gov/TableInfo.asp?gnoyr_VQ=FGJ&QO_fu146_anzr=b0-gvzr), August 2026 |
 | Live programs | [FAA NAS status](https://nasstatus.faa.gov/api/airport-status-information) |
 | Weather | NOAA Aviation Weather METAR |
-| Taxi fuel | 12 kg per minute, both engines, 737 / A320 class. Planning figure, not a measured flow. |
+| Taxi fuel | 26.5 lb per minute, both engines, 737 / A320 class. About 6.7 lb per US gallon. Planning figure, not a measured flow. |
 
 Refresh the history when a new BTS month is published:
 

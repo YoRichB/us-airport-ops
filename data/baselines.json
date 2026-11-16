@@ -10,7 +10,9 @@
     "aircraft": "Typical narrowbody (737 / A320 class)",
     "kgPerMinute": 12,
     "kgPerGallon": 3.04,
-    "note": "Planning figure for both engines at taxi thrust. This is not a measured fuel flow."
+    "lbPerMinute": 26.5,
+    "lbPerGallon": 6.7,
+    "note": "Planning figure for both engines at taxi thrust, shown in pounds. 26.5 lb/min is 12 kg/min. This is not a measured fuel flow."
   },
   "airports": {
     "ATL": {
